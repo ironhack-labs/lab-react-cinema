@@ -40,9 +40,13 @@ And you have to install all the dependencies:
 ```shell
 $ cd server
 $ npm install
+$ nodemon 
 $ cd client
 $ npm install
+$ npm start
 ```
+
+
 
 Now you are ready to start. 🚀
 
@@ -50,11 +54,11 @@ Now you are ready to start. 🚀
 
 First, we need to seed our database. Below you will find an array of objects with info for 8 movies. You should create two files:
 
-- Create a folder `models` and in it add the `Movie.model.js` file for the Movie model;
+- Create a folder `models` in the `server` folder and in it add the `Movie.model.js` file for the Movie model;
 - Create `seeds.js` file inside the bin folder and write the code necessary to seed the database.
 
 ```javascript
-// To insert in "bin/seeds.js"
+// To insert in "server/bin/seeds.js"
 
 const movies = [
   {
