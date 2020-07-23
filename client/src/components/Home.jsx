@@ -1,17 +1,20 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import {Link} from 'react-router-dom'
 
 export default class Home extends Component {
-  async callMyBackend() {
-    // this is an example call to our backend
-    let responseFromBackend = await axios.get('http://localhost:5000/');
-    console.log(responseFromBackend);
-  }
+
   render() {
     return (
-      <div>
-        <button onClick={this.callMyBackend}>Test Backend Call</button>
-        <h1>Welcome to Express Cinema</h1>
+      <div >
+        <img src={'https://user-images.githubusercontent.com/23629340/36986664-acd6af14-209a-11e8-816d-b62417239c53.png'} style={
+          {height: '400px'}
+        }/>
+        {/* <button onClick={this.callMyBackend}>Test Backend Call</button> */}
+        <br />
+        <Link to='/movies'>See the movies</Link>
+        <br/>
+        <Link to='/new'>Add A New Movie</Link>
       </div>
     );
   }
