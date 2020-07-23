@@ -59,7 +59,7 @@ class movies extends Component {
   };
 
   render() {
-    return <div>{this.displayMovies()}</div>;
+    return <div>{this.displayAllMovies()}</div>;
   }
 }
 
