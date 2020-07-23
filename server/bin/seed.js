@@ -80,3 +80,20 @@ const movies = [
     showtimes: ["13:00", "15:30", "18:00", "20:10", "22:40"],
   },
 ];
+
+mongoose
+  .connect("mongodb://localhost/movies-dev", {
+    useCreateIndex: true,
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
+  .then(async (x) => {
+    console.log(
+      `Connected to Mongo! Database name: "${x.connections[0].name}"`
+    );
+    console.log(result);
+    mongoose.disconnect();
+  })
+  .catch((err) => {
+    console.error("Error connecting to mongo", err);
+  });
