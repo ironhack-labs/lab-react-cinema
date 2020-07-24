@@ -16,6 +16,9 @@ export default class Home extends Component {
         <Link to="/movies">
           <button>Check Movies</button>
         </Link>
+        <Link to="/addMovie">
+          <button>Add Movies</button>
+        </Link>
       </div>
     );
   }

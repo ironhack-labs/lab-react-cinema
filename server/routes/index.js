@@ -16,4 +16,14 @@ router.get("/movie/:id", (req, res) => {
     res.json(movie);
   });
 });
+router.post("/addMovie", (req, res) => {
+  Movies.create(req.body).then((addMovie) => {
+    console.log(addMovie);
+  });
+});
+router.get("/getMovieData", (req, res, next) => {
+  Movies.find().then((newMovie) => {
+    res.json(newMovie);
+  });
+});
 module.exports = router;
