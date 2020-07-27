@@ -1,0 +1,25 @@
+.movie-page {
+  display: flex;
+}
+
+.movie-text {
+  padding-left: 5%;
+}
+.shorter {
+  width: 55%;
+}
+.image-movie {
+  width: 25%;
+  min-width: 300px;
+  height: auto;
+}
+@media only screen and (max-width: 600px) {
+  .movie-page {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .shorter {
+    width: 90%;
+  }
+}

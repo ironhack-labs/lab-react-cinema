@@ -7,8 +7,24 @@ img {
 .relative {
   position: relative;
 }
-
-button {
+.form-container {
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin-left: 5%;
+}
+.form-container input {
+  margin-bottom: 10px;
+  background-color: #eee;
+}
+.form-container button {
+  background-color: skyblue;
+  width: 30%;
+  text-align: center;
+  align-self: center;
+}
+.home-btn {
   padding: 2% 5%;
   cursor: pointer;
   border-radius: 75px;

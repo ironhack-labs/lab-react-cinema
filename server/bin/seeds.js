@@ -7,7 +7,7 @@ const movies = [
   {
     title: "A Wrinkle in Time",
     director: "Ava DuVernay",
-    stars: ["Storm Reid", "Oprah Winfrey", "Reese Witherspoon"],
+    stars: ["• Storm Reid", "• Oprah Winfrey", "• Reese Witherspoon"],
     image:
       "https://images-na.ssl-images-amazon.com/images/M/MV5BMjMxNjQ5MTI3MV5BMl5BanBnXkFtZTgwMjQ2MTAyNDM@._V1_UX182_CR0,0,182,268_AL_.jpg",
     description:
@@ -17,7 +17,7 @@ const movies = [
   {
     title: "The Strangers: Prey at Night",
     director: "Johannes Roberts",
-    stars: ["Christina Hendricks", "Bailee Madison", "Martin Henderson"],
+    stars: ["• Christina Hendricks", "• Bailee Madison", "• Martin Henderson"],
     image:
       "https://images-na.ssl-images-amazon.com/images/M/MV5BMTY1OTIwODgzMV5BMl5BanBnXkFtZTgwMzUyMDgzNDM@._V1_UX182_CR0,0,182,268_AL_.jpg",
     description:
@@ -27,7 +27,7 @@ const movies = [
   {
     title: "The Hurricane Heist",
     director: "Rob Cohen",
-    stars: ["Toby Kebbell", "Maggie Grace", "Ryan Kwanten"],
+    stars: ["• Toby Kebbell", "• Maggie Grace", "• Ryan Kwanten"],
     image:
       "https://images-na.ssl-images-amazon.com/images/M/MV5BMzg3Y2MyNjgtMzk4ZS00OTU3LWEwZmMtN2Y0NTdlZjU0NGFiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UX182_CR0,0,182,268_AL_.jpg",
     description:
@@ -37,7 +37,7 @@ const movies = [
   {
     title: "Gringo",
     director: "Nash Edgerton",
-    stars: ["Joel Edgerton", "Charlize Theron", "David Oyelowo"],
+    stars: ["• Joel Edgerton", "• Charlize Theron", "• David Oyelowo"],
     image:
       "https://images-na.ssl-images-amazon.com/images/M/MV5BMjAyMTk2MTQ3Ml5BMl5BanBnXkFtZTgwNDQ2ODE0NDM@._V1_UX182_CR0,0,182,268_AL_.jpg",
     description:
@@ -47,7 +47,7 @@ const movies = [
   {
     title: "Thoroughbreds",
     director: "Cory Finley",
-    stars: ["Anya Taylor-Joy", "Olivia Cooke", "Anton Yelchin"],
+    stars: ["• Anya Taylor-Joy", "• Olivia Cooke", "• Anton Yelchin"],
     image:
       "https://images-na.ssl-images-amazon.com/images/M/MV5BNDcyNDA4NDAzN15BMl5BanBnXkFtZTgwODQxMDQ5NDM@._V1_UX182_CR0,0,182,268_AL_.jpg",
     description:
@@ -57,7 +57,7 @@ const movies = [
   {
     title: "The Leisure Seeker",
     director: "Paolo Virzì",
-    stars: ["Helen Mirren", "Donald Sutherland", "Janel Moloney"],
+    stars: ["• Helen Mirren", "• Donald Sutherland", "• Janel Moloney"],
     image:
       "https://images-na.ssl-images-amazon.com/images/M/MV5BMTg1NTg2MzcyNF5BMl5BanBnXkFtZTgwNjMwMDIzNDM@._V1_UX182_CR0,0,182,268_AL_.jpg",
     description:
@@ -67,7 +67,7 @@ const movies = [
   {
     title: "Black Panther",
     director: "Ryan Coogler",
-    stars: ["Chadwick Boseman", "Michael B. Jordan", "Lupita Nyong'o"],
+    stars: ["• Chadwick Boseman", "• Michael B. Jordan", "• Lupita Nyong'o"],
     image:
       "https://images-na.ssl-images-amazon.com/images/M/MV5BMTg1MTY2MjYzNV5BMl5BanBnXkFtZTgwMTc4NTMwNDI@._V1_UX182_CR0,0,182,268_AL_.jpg",
     description:
@@ -77,7 +77,7 @@ const movies = [
   {
     title: "Red Sparrow",
     director: "Francis Lawrence",
-    stars: ["Jennifer Lawrence", "Joel Edgerton", "Matthias Schoenaerts"],
+    stars: ["• Jennifer Lawrence", "• Joel Edgerton", "• Matthias Schoenaerts"],
     image:
       "https://images-na.ssl-images-amazon.com/images/M/MV5BMTA3MDkxOTc4NDdeQTJeQWpwZ15BbWU4MDAxNzgyNTQz._V1_UX182_CR0,0,182,268_AL_.jpg",
     description:

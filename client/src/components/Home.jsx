@@ -7,9 +7,10 @@ export default class Home extends Component {
   async callMyBackend() {
     // this is an example call to our backend
     let responseFromBackend = await axios.get("http://localhost:5000/");
-    console.log(responseFromBackend);
+    // console.log(responseFromBackend);
   }
   render() {
+    // console.log(this.props);
     return (
       <div>
         <div className="relative">
@@ -18,7 +19,7 @@ export default class Home extends Component {
             alt="cinema-bg"
           ></img>
           <Link to="./movies">
-            <button>Check the movies!</button>
+            <button className="home-btn">Check the movies!</button>
           </Link>
         </div>
       </div>
