@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../index.css'
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 class CheckMovies extends Component {
   state={
@@ -16,11 +17,10 @@ class CheckMovies extends Component {
   displayMovies = () => {
     return this.state.movies.map( (eachMovie) => {
       return (
-        <div>
-                  <li>
-                  <strong>Name:</strong>
-                  {eachMovie.title}
-                </li>
+          <div> 
+              <li>
+                <strong>{eachMovie.title}</strong>
+              </li>
           <div className="card-front">
               <img
                 className="picture"
@@ -28,10 +28,10 @@ class CheckMovies extends Component {
                 alt={eachMovie.title}
               ></img>
             </div>
-            <div className="card" key={eachMovie._id}>
+            <Link to={`/movie/${eachMovie._id}`} >Show More</Link>
+            {/* <div className="card" key={eachMovie._id}>
               <ul>
                 <li>
-                  <strong>Name:</strong>
                   {eachMovie.title}
                 </li>
                 <li>
@@ -40,10 +40,18 @@ class CheckMovies extends Component {
                 </li>
                 <li>
                   <strong>stars:</strong>
-                  {eachMovie.stars.join(' ,')}
+                  {eachMovie.stars.join(' ,')} 
+                </li>
+                <li>
+                  <strong>Description:</strong>
+                  <p>{eachMovie.description}</p>
+                </li>
+                <li>
+                  <strong>Showtimes:</strong>
+                  {eachMovie.showtimes.join(' ,')} 
                 </li>
               </ul>
-            </div>
+            </div> */}
         </div>
       );
     })

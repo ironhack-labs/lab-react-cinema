@@ -17,4 +17,11 @@ router.get('/movies', (req, res) => {
     .catch(error => console.log('An error happened while trying to collect data from database', error));
 });
 
+router.get('/movies/:id', (req, res) => {
+  console.log('called');
+  Movie.findById(req.params.id)
+    .then(movies => res.json(movies))
+    .catch(error => console.log('An error happened while trying to collect data from database', error));
+});
+
 module.exports = router;

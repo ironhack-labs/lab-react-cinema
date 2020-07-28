@@ -15,6 +15,7 @@ const moviesSchema = new Schema({
     type:String,
     default:"https://images.media-allrecipes.com/images/75131.jpg"
   },
+  description:String,
   showtimes:[ String ],
 });
 
