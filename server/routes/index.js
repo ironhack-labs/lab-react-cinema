@@ -24,4 +24,11 @@ router.get('/movies/:id', (req, res) => {
     .catch(error => console.log('An error happened while trying to collect data from database', error));
 });
 
+router.post('/movies/new', (req, res) => {
+  console.log('called');
+  Movie.create(req.body)
+    .then(res.json('Movie is added'))
+    .catch(error => console.log('An error happened while trying to collect data from database', error));
+});
+
 module.exports = router;

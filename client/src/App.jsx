@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Home from './components/Home';
 import CheckMovies from './components/checkMovies';
 import Movie from './components/Movie';
+import Newmovie from './components/newmovie';
 import { Switch, Route} from "react-router-dom";
 
 class App extends Component {
@@ -11,6 +12,7 @@ class App extends Component {
         <Switch>
           <Route exact path = '/' render = { () => <Home />} />
           <Route exact path = '/check-movies' render={ () => <CheckMovies />} />
+          <Route exact path = '/new-movie' render={ () => <Newmovie />} />
           <Route exact path = '/movie/:id' render={(props) => <Movie {...props} />} />
         </Switch>  
       </div>
