@@ -2,10 +2,9 @@ const mongoose = require('mongoose');
 
 const Movie = require('../models/Movie.model');
 
-// const MONGODB_URI = 'mongodb+srv://kolade:koladeGurej@cluster0-eutwa.mongodb.net/movies-dev?retryWrites=true&w=majority';
 console.log('loaded')
 mongoose
-  .connect('mongodb+srv://kolade:koladeGurej@cluster0-eutwa.mongodb.net/movie-db?retryWrites=true&w=majority', { useCreateIndex: true, useNewUrlParser: true, useUnifiedTopology: true })
+  .connect(process.env.APIKEY, { useCreateIndex: true, useNewUrlParser: true, useUnifiedTopology: true })
   .then(x => {
     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`);
   })
