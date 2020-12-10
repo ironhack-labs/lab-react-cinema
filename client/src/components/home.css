@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  /* background-color: #111; */
+  font-family: Arial, Helvetica, sans-serif;
+  background: lightblue url("../img/cinema-background.jpg") no-repeat fixed center;
+  background-size: cover;
+}
+
+.content {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  font-weight: 800;
+  max-width: 1400px;
+  margin-top: 400px;
+}
+
+.content h1{
+  color: aliceblue;
+  padding-top: 3rem;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.btn {
+    display:inline-block;
+    padding:0.3em 1.2em;
+    margin:0 0.3em 0.3em 0;
+    border-radius:2em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:#FFFFFF;
+    background-color:#4eb5f1;
+    text-align:center;
+    transition: all 0.2s;
+}
+
+
+
+/* flex-start | flex-end | center | space-between */
