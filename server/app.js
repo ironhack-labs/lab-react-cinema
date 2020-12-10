@@ -8,6 +8,9 @@ const logger = require('morgan');
 const path = require('path');
 const cors = require('cors');
 
+const Movies = require('./models/Movie.model');
+const movies = require('./bin/seeds');
+
 mongoose
   .connect('mongodb://localhost/movies-dev', { useCreateIndex: true, useNewUrlParser: true, useUnifiedTopology: true })
   .then(x => {
@@ -17,10 +20,12 @@ mongoose
     console.error('Error connecting to mongo', err);
   });
 
+
 const app_name = require('./package.json').name;
 const debug = require('debug')(`${app_name}:${path.basename(__filename).split('.')[0]}`);
 
 const app = express();
+
 
 // Middleware Setup
 app.use(cors());
